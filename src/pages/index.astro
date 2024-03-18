@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Formation from "../components/Formation.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Projects from "../components/Projects.astro";
+
+import LinkedIn from "../icons/LinkedIn.astro";
+import GitHub from "../icons/GitHub.astro";
+import Email from "../icons/Email.astro";
+import Code from "../icons/Code.astro";
+import School from "../icons/School.astro";
+---
+
+<Layout title="Portfolio de Miguel.ae - Desarrollador y Programador Web">
+  <main class="px-5">
+    <SectionContainer id="about-me" class="pt-64 pb-28">
+      <img
+        class="rounded-full size-28 mx-auto"
+        src="https://media.licdn.com/dms/image/C4D03AQHmc7gjv8vBvg/profile-displayphoto-shrink_400_400/0/1603790093969?e=1715212800&v=beta&t=o-ODNmcjOliTUScredm06PS5jhRKdhftpZRMr872FkE"
+        alt="miguelae profile picture"
+      />
+      <h1
+        class="text-white text-5xl font-bold flex flex-row gap-x-5 justify-center text-center pb-8 pt-4"
+      >
+        Miguel Ángel Pérez Morales
+      </h1>
+
+      <h2 class="text-xl opacity-80 text-center">
+        Diseñador Junior de <span class="text-yellow-200">Front End</span>. Me especializo en el diseño de interfaces atractivas, creativas y funcionales que den a los usuarios una gran experiencia.
+      </h2>
+
+      <ul class="flex gap-x-4 mt-8 justify-center">
+        <li>
+          <SocialPill href="https://github.com/Miguel-ae">
+            <GitHub class="size-6" />
+            GitHub
+          </SocialPill>
+        </li>
+        <li>
+          <SocialPill
+            href="https://www.linkedin.com/in/miguel-%C3%A1ngel-p%C3%A9rez-morales-16a255182/"
+          >
+            <LinkedIn class="size-6" />
+            LinkedIn
+          </SocialPill>
+        </li>
+        <li>
+          <SocialPill
+            href="mailto:migueprzm@gmail.com"
+          >
+            <Email class="size-6" />
+            Email
+          </SocialPill>
+        </li>
+      </ul>
+    </SectionContainer>
+
+    <SectionContainer id="formation" class="py-32">
+      <h2 class="text-2xl font-bold mb-5 flex gap-x-3 items-center">
+        <School class="size-7" />
+        Formación
+      </h2>
+      <Formation />
+    </SectionContainer>
+
+
+    <SectionContainer id="projects" class="py-32">
+      <h2 class="text-2xl font-bold mb-5 flex gap-x-3 items-center">
+        <Code class="size-8" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>

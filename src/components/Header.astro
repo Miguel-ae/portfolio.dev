@@ -1,0 +1,56 @@
+---
+const navItems = [
+  {
+    title: "Sobre mí",
+    label: "about-me",
+    url: "/#about-me",
+  },
+  {
+    title: "Formación",
+    label: "formation",
+    url: "/#formation",
+  },
+  {
+    title: "Proyectos",
+    label: "projects",
+    url: "/#projects",
+  },
+  {
+    title: "Contacto",
+    label: "contacto",
+    url: "mailto:migueprzm@gmail.com",
+  },
+];
+---
+
+<header class="fixed z-10 flex items-center justify-center w-full mt-2">
+  <nav
+    class="flex rounded-full text-gray-600 dark:text-gray-200 justify-center items-center max-[420px]:text-xs"
+  >
+    {
+      navItems.map((link) => (
+        <a
+          class="px-4 py-2 transition duration-300 hover:text-yellow-400 hover:bg-white/10 rounded-full"
+          aria-label={link.label}
+          href={link.url}
+        >
+          {link.title}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur dark:bg-gray-800/90 bg-white/50 ring-white/10;
+    }
+  }
+</style>

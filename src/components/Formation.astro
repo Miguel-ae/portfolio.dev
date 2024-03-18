@@ -1,0 +1,33 @@
+---
+import FormationItem from "../components/FormationItem.astro"
+
+const FORMATION = [
+
+  {
+    date: "Actualmente...",
+    title: "LEMONCODE - Master Frontend XV Edición",
+    academy: "LEMONCODE",
+    description:
+      "Máster Front End especializado en tecnologías como: React - Angular - Vuejs - Svelte - d3js - Flexbox - CSS Grid - Material Design - CSS in JS - NextJS -  Jest - GraphQL - Webpack - Vite - Parcel - ES6 - Typescript - Git",
+    link: "https://lemoncode.net/master-frontend#inicio-banner",
+  },
+  {
+    date: "Septiembre 2018 - Julio 2020",
+    title: "CESUR FP - Grado Superior en Desarrollo Web",
+    academy: "Adevinta Spain",
+    description:
+      "Centrado en la formación práctica y teórica en áreas como diseño web, programación, bases de datos y seguridad. Como también en preparacion en habilidades actualizadas y relevantes para el mercado laboral",
+  },
+
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">  
+  {
+    FORMATION.map(experience => (
+      <li class="mb-10 ms-4">
+        <FormationItem {...experience} />
+      </li>
+    ))
+  }                
+</ol>
