@@ -1,3 +1,3 @@
 # Portfolio Personal
 
-![image](https://github.com/Miguel-ae/portfolio.dev/assets/47482720/8640de7b-4a64-46cb-9c33-d8a8100d1e00)
+![image](https://github.com/Miguel-ae/portfolio.dev/assets/47482720/da3b6b8a-ffad-4120-afe8-819a7f321055)
